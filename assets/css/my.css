@@ -1,0 +1,54 @@
+.section__title{color: var(--accent-color);}
+p {
+	border-left: 2px solid var(--accent-color-light);
+	text-align: justify;
+	padding-left: 10px;
+}
+
+ol {
+  columns: 1; /* Set the number of columns as per your requirement */
+  /* column-gap: 20px; /* Adjust the gap between columns as needed */
+  padding: 0;
+  margin: 0;
+  list-style-position: inside; /* Keeps the numbering inside the columns */
+  counter-reset: my-counter 0; /* Set the counter starting value */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+  
+}
+
+ol li {
+  display: inline-block;
+  width: 100%; /* Ensures each list item takes the full width of its column */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  break-inside: avoid; /* Prevents the list items from breaking inside the columns */
+  counter-increment: my-counter; /* Increment the counter for each list item */
+  margin-bottom: 5px; /* Add a 10px gap between li elements */
+}
+
+ol li::before {
+  content: counter(my-counter, decimal-leading-zero)') '; /* Display the counter with leading zeros */
+  margin-right: 10px; /* Add space between the counter and text */
+  font-weight: bold;
+}
+
+
+@media (min-width: 600px) {
+  ol {
+    columns: 2; /* Use two columns for screens wider than 600px */
+    column-gap: 20px; /* Adjust the gap between columns as needed */
+  }
+}
+
+@media (min-width: 900px) {
+  ol {
+    columns: 3; /* Use three columns for screens wider than 900px */
+  }
+}
+
+  #zoomedImage {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+	border: 1px solid var(--accent-color-light);
+	margin-top: 10px;
+	width: 250px;
+  }
