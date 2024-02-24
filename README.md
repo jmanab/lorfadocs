@@ -1,2 +1,3 @@
-# lorfadocs
-Pharma web application outline
+# Description
+Lofanpharma Web Application Requirments details.
+
