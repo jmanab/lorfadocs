@@ -1,7 +1,7 @@
-
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,526 +11,552 @@
     <link rel="stylesheet" href="assets/css/scribbler-global.css">
     <link rel="stylesheet" href="assets/css/scribbler-doc.css">
     <link rel="stylesheet" href="assets/css/my.css">
-  </head>
-  <body>
+</head>
+<style>
+   
+</style>
+
+<body>
     <div class="doc__bg"></div>
-	<!---Top Nav--->
+    <!---Top Nav--->
     <nav class="header">
-      <h1 class="logo"> App <span class="logo__thin">Layout</span></h1>
-      <ul class="menu">
-        <div class="menu__item toggle"><span></span></div>
-        <li class="menu__item"><a href="" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
-        <li class="menu__item"><a href="/" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
-      </ul>
-    </nav>
-	<!---Wraper Start--->
-	<div class="wrapper">
-	      <aside class="doc__nav">
-        <ul>
-          <li class="js-btn selected">Get Started</li>
-          <li class="js-btn">Demography</li>
-          <li class="js-btn">Employee</li>
-          <li class="js-btn">Doctor Sample</li>
-          <li class="js-btn">Doctor Input(Gift)</li>
-          <li class="js-btn">Associate Details</li>
-          <li class="js-btn">Associate Activity</li>
-          <li class="js-btn">Point of Sale</li>
-          <li class="js-btn">Company Holiday</li>
-          <li class="js-btn">Monthly Expense</li>
-          <li class="js-btn">Reports</li>
+        <h1 class="logo"> App <span class="logo__thin">Layout</span></h1>
+        <ul class="menu">
+            <div class="menu__item toggle"><span></span></div>
+
+            <li class="menu__item"><a class="link link--dark" href="/lorfadocs"><i class="fa fa-home"></i> Home</a></li>
+            <li class="menu__item"><a class="link link--dark"
+                    href="https://github.com/jmanab/lorfadocs/tree/main/requirment"><i class="fa fa-github"></i>
+                    Downloads</a></li>
+            <li class="menu__item" onclick="printCurrentPage()"><a class="link link--dark" href="javascript:void(0)"><i
+                        class="fa fa-print"></i> Print</a></li>
         </ul>
-      </aside>  
+    </nav>
+    <!---Wrapper Start--->
+    <div class="wrapper">
+        <aside class="doc__nav">
+            <ul>
+                <li class="js-btn selected">Get Started</li>
+                <li class="js-btn">Demography</li>
+                <li class="js-btn">Employee</li>
+                <li class="js-btn">Doctor Sample</li>
+                <li class="js-btn">Doctor Input(Gift)</li>
+                <li class="js-btn">Associate Details</li>
+                <li class="js-btn">Associate Activity</li>
+                <li class="js-btn">Point of Sale</li>
+                <li class="js-btn">Company Holiday</li>
+                <li class="js-btn">Monthly Expense</li>
+                <li class="js-btn">Reports</li>
+            </ul>
+        </aside>
 
-      <article class="doc__content">
-        <section class="js-section">
-          <h3 class="section__title">Get Started</h3>
-          <p>
-				The Application focused on <b>1) DCR (Daily Call Register), 2) Sales Status, 3) Emplyoee Leave and 4) Monthly Allowence</b>.
-				As per documents sent and disscuss over phone detail outline of the software as follows.
-		  </p>
-      <p> <b>Every action should have a confirmation notification before process an activity</b> </p>
-		  
-          <table id="customers">
-		  
-            <tr>
-              <th>Module</th>
-              <th>Sub-Module</th>
-            </tr>
-			
-            <tr>
-              <td>Demography</td>
-              <td>1. Demography</td>
-            </tr>  
-			
-			<tr>
-              <td>Employee </td>
-              <td>2. Employee Register</td>
-            </tr>
-			
-			<tr>
-              <td>Doctor Sample </td>
-              <td>
-					3. Sample Introduce</br>
-					4. Sample Allocation</br>					
-			  </td>
-            </tr>			
-			
-			<tr>
-              <td>Doctor Input </td>
-              <td>
-					5. Input Introduce</br>
-					6. Input Allocation</br>					
-			  </td>
-            </tr>	
-			
-			<tr>
-              <td>Associate Details </td>
-              <td>
-					7. Doctor Register</br>
-					8. Associate Register</br>					
-			  </td>
-            </tr>	
-			
-			<tr>
-              <td>Associate Activity </td>
-              <td>
-					9. Doctor Visit Register</br>
-					10. Associate Visit Register</br>					
-			  </td>
-            </tr>
+        <article class="doc__content">
+            <h2 id="page-title" class="d-none">Lorfanpharma Web Application Layout:</h2>
+            <section class="js-section">
+                <h3 class="section__title">Get Started</h3>
+                <div class="status">
+                    <b>Status :</b> All details discussed, checked and finalize by <b>S*****G.</b> <br>
+                    <b>Date :</b> 24-02-2024 <br>
+                </div>
+                <p>
+                    The Application focused on <b>1) DCR (Daily Call Register), 2) Sales Status, 3) Employee Leave and
+                        4) Monthly Allowance</b>.
+                    As per documents sent and discuss over phone detail outline of the software as follows.
+                </p>
+                <p> <b>Every action should have a confirmation notification before process an activity</b> </p>
 
-			<tr>
-              <td>Point of Sale </td>
-              <td>
-					11. Product List</br>
-					12. Sales Register</br>					
-			  </td>
-            </tr>
-			
-			<tr>
-              <td>Company Holiday </td>
-              <td>
-					13. Company Holiday Per Year</br>
-					14. Yearly Allocated Leave</br>					
-					15. Employee Leave Register</br>					
-			  </td>
-            </tr>
-			
-			<tr>
-              <td>Monthly Expense </td>
-              <td>
-					16. Allowence Master</br>
-					17. Other Expense Register</br>					
-			  </td>
-            </tr>
-			
-          </table>		  
-		  <hr>
-        </section>        <section class="js-section">
-          <h3 class="section__title">Demography Master</h3>
-		  <p>*Travel Distance* to calculate daily allowance.</p>
-		  <table id="customers">
-			  <tr>
-				<td>ZONE</td>
-				<td>East Zone</td>
-				<td>HO</td>
-			  </tr>  
-			  <tr>
-				<td>Region</td>
-				<td>West Bengal</td>
-				<td>HO</td>
-			  </tr>	
-			  <tr>
-				<td>Headquater</td>
-				<td>Kolkata, Bardhaman, Siligui, Alipurduar etc.</td>
-				<td>HO</td>
-			  </tr>	
-			  <tr>
-				<td>Area</td>
-				<td>Arambag+Chapadnga, Ranaghat, Gazol, Islampur, Jalpaiguri+Laraguri+Chalsa+Malbazar, Cooch Behar etc.</td>
-				<td>HO/PSR</td>
-			  </tr>				  		  		  
-		  </table>
+                <table id="customers">
 
-				<ol>
-					<li>Region</li>
-					<li>Head Office</li>
-					<li>Travele Area</li>
-					<li>Travel Distance</li>
-					<li>Type(Plains or Hills)</li>
-				</ol>		  
-		  <hr>
-        </section>        <section class="js-section">
-          <h3 class="section__title">Employee Registration (HO only)</h3>
-<p>Employee to be add by the HO only.
-    Where job profile will be <strong>PSR/ABM/RBM/ZBM</strong> and employee id : <strong>LP/DD/MM/YY/0001</strong></p>
+                    <tr>
+                        <th>Module</th>
+                        <th>Sub-Module</th>
+                    </tr>
 
+                    <tr>
+                        <td>Demography</td>
+                        <td>1. Demography</td>
+                    </tr>
 
-<div class="app-tbl">
-		<ol>
-			<li>Employee Name</li>
-			<li>Address</li>
-			<li>Locality</li>
-			<li>City</li>
-			<li>District</li>
-			<li>State</li>
-			<li>Zip</li>
-			<li>Pesonal Phone</li>
-			<li>Emargency Phone</li>
-			<li>Mail Id</li>
-			<li>Date Of Birth</li>
-			<li>Aadhar No</li>
-			<li>Pan Details</li>
-			<li>Bank Account</li>
-			<li>Bank Branch</li>
-			<li>Bank IFSC</li>
-			<li>Designation Assign</li>
-			<li>Headquarter Assign</li>
-			<li>Immidiate Senior/ Reporting To</li>
-			<li>Joining Date </li>
-			<li>Employee Code (Auto)</li>
-		</ol>
-</div>
-        <!-- Add more list items as needed -->
+                    <tr>
+                        <td>Employee </td>
+                        <td>2. Employee Register</td>
+                    </tr>
 
-		  <hr>
-        </section>        <section class="js-section">
-          <h3 class="section__title">Doctor Sample</h3>
-		  <p>Sample Assign By HO to  HQ (Served by current PSR)</p>
+                    <tr>
+                        <td>Doctor Sample </td>
+                        <td>
+                            3. Sample Introduce</br>
+                            4. Sample Allocation</br>
+                        </td>
+                    </tr>
 
-<h4 id="sample-introduce">Sample Introduce (HO only)</h4>
-<ol>
-    <li>Product Name</li>
-    <li>Product Batch No</li>
-    <li>Product Exp Date</li>
-    <li>Introduce Qty</li>
-    <li>Introduce Date</li>
-</ol>
-<h4 id="sample-allocation">Sample Allocation (HO only) </h4>
-<p>Sample Assign By HO to  HQ (Served by current PSR)</p>
-<ol>
-    <li>HQ Name</li>
-    <li>Product Name</li>
-    <li>Product Batch No</li>
-    <li>Allocate Qty</li>
-    <li>Allocation Date</li>
-</ol>
-<p><b>Stock release on requirments</b></p>
-		  <hr>
-        </section>        <section class="js-section">
-          <h3 class="section__title">Doctor Input(Gift)</h3>
+                    <tr>
+                        <td>Doctor Input </td>
+                        <td>
+                            5. Input Introduce</br>
+                            6. Input Allocation</br>
+                        </td>
+                    </tr>
 
-<p><b>Follow Sample Doctor data </b></p>
-<h4 id="input-introduce">Input Introduce</h4>
-<ol>
-    <li>Item Name</li>
-    <li>Item Batch No</li>
-    <li>Item Exp Date</li>
-    <li>Introduce Qty</li>
-    <li>Introduce Date</li>
-</ol>
-<h4 id="input-allocation">Input Allocation</h4>
-<ol>
-    <li>Employee Name</li>
-    <li>Employee HQ</li>
-    <li>Item Name</li>
-    <li>Item Batch No</li>
-    <li>Item Exp Date</li>
-    <li>Allocate Qty</li>
-    <li>Allocation Date</li>
-</ol>
-<p><b>Stock release on requirments</b></p>
-		  <hr>
-        </section>        <section class="js-section">
-          <h3 class="section__title">Associate Details</h3>
+                    <tr>
+                        <td>Associate Details </td>
+                        <td>
+                            7. Doctor Register</br>
+                            8. Associate Register</br>
+                        </td>
+                    </tr>
 
-<p>Associate suggetion submit by employe approve by Senior/HO.</p>
-<p>DOCTOR, StOKIEST, CHEMIST.</p>
-<h4 id="doctor-register">Doctor Register</h4>
-<ol>
-    <li>Name</li>
-    <li>DOB (Optional)</li>
-    <li>Specialization</li>
-    <li>Full Address with ZIP SPLIT as Emp</li>
-    <li>Contact No</li>
-    <li>HQ</li>
-</ol>
-<p></p>
-<h4 id="associate-register">Business Associate Register</h4>
-<ol>
-    <li>Business Name</li>
-    <li>Type (Stokist/Chemist)</li>
-    <li>Owner Name</li>
-    <li>Full Address with ZIP</li>
-    <li>Contact No</li>
-    <li>HQ</li>
-</ol>
-		  <hr>
-        </section>        <section class="js-section">
-          <h3 class="section__title">Associate Activity</h3>
+                    <tr>
+                        <td>Associate Activity </td>
+                        <td>
+                            9. Doctor Visit Register</br>
+                            10. Associate Visit Register</br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Point of Sale </td>
+                        <td>
+                            11. Product List</br>
+                            12. Sales Register</br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Company Holiday </td>
+                        <td>
+                            13. Company Holiday Per Year</br>
+                            14. Yearly Allocated Leave</br>
+                            15. Employee Leave Register</br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Monthly Expense </td>
+                        <td>
+                            16. Allowance Master</br>
+                            17. Other Expense Register</br>
+                        </td>
+                    </tr>
+
+                </table>
+                <hr>
+            </section>
+            <section class="js-section">
+                <h3 class="section__title">Demography Master</h3>
+                <p>*Travel Distance* to calculate daily allowance.</p>
+                <table id="customers">
+                    <tr>
+                        <td>ZONE</td>
+                        <td>East Zone</td>
+                        <td>HO</td>
+                    </tr>
+                    <tr>
+                        <td>Region</td>
+                        <td>West Bengal</td>
+                        <td>HO</td>
+                    </tr>
+                    <tr>
+                        <td>Headquarter</td>
+                        <td>Kolkata, Bardhaman, Siliguri, Alipurduar etc.</td>
+                        <td>HO</td>
+                    </tr>
+                    <tr>
+                        <td>Area</td>
+                        <td>Arambag+Chapadnga, Ranaghat, Gazol, Islampur, Jalpaiguri+Lataguri+Chalsa+Malbazar, Cooch
+                            Behar etc.</td>
+                        <td>HO/PSR</td>
+                    </tr>
+                </table>
+
+                <ol>
+                    <li>Region</li>
+                    <li>Head Office</li>
+                    <li>Travel Area</li>
+                    <li>Travel Distance</li>
+                    <li>Type(Plains or Hills)</li>
+                </ol>
+                <hr>
+            </section>
+            <section class="js-section">
+                <h3 class="section__title">Employee Registration (HO only)</h3>
+                <p>Employee to be add by the HO only.
+                    Where job profile will be <strong>PSR/ABM/RBM/ZBM</strong> and employee id :
+                    <strong>LP/DD/MM/YY/0001</strong>
+                </p>
 
 
-<p>All employees PSR/ABM/RBM/ZBM are to be submit the acctivity</p>
-<p>Only PSR is allocate Sample & Gift to the Doctor.</p>
-<p> 
-    <b>Restriction</b>: <br>    
-    1. PSR & ABM will have restricton of 48 hrs to submit the Activity. <br>
-    2. 48 hrs to be calculate on working days only. Leave & Holiday not to be calculate<br>
-    3. To be unlock by HO only.
-    4. Total Area Cover
+                <div class="app-tbl">
+                    <ol>
+                        <li>Employee Name</li>
+                        <li>Address</li>
+                        <li>Locality</li>
+                        <li>City</li>
+                        <li>District</li>
+                        <li>State</li>
+                        <li>Zip</li>
+                        <li>Personal Phone</li>
+                        <li>Emergency Phone</li>
+                        <li>Mail Id</li>
+                        <li>Date Of Birth</li>
+                        <li>Aadhar No</li>
+                        <li>Pan Details</li>
+                        <li>Bank Account</li>
+                        <li>Bank Branch</li>
+                        <li>Bank IFSC</li>
+                        <li>Designation Assign</li>
+                        <li>Headquarter Assign</li>
+                        <li>Immediate Senior/ Reporting To</li>
+                        <li>Joining Date </li>
+                        <li>Employee Code (Auto)</li>
+                    </ol>
+                </div>
+                <!-- Add more list items as needed -->
 
-</p>
-<p>RBM & ZBM wil not fall on restricton.</p>
-<p>All Senior are eligible to access/view the activity submited by his sub-ordinates.</p>
-<h4 id="doctor-visit-register">Doctor Visit Register</h4>
-<ol>
-    <li>Date of Visit</li>
-    <li>Working Area (From List)</li>
-    <li>Doctor Name</li>
-    <li>Sample-A Name</li>
-    <li>Sample-A Qty</li>
-    <li>Sample-B Name</li>
-    <li>Sample-B Qty</li>
-    <li>Input Name</li>
-    <li>Input Qty</li>
-    
-    <li>Associate Member</li>
-</ol>
-<h4 id="associate-visit-register">Associate Visit Register</h4>
-<ol>
-    <li>Associate Name</li>
-    <li>Associate Type</li>
-    <li>Date of Visit</li>
-    <li>Associate Member</li>
-</ol>
+                <hr>
+            </section>
+            <section class="js-section">
+                <h3 class="section__title">Doctor Sample</h3>
+                <p>Sample Assign By HO to HQ (Served by current PSR)</p>
 
-<h4 id="associate-visit-register">Expeences for Monthly Expeences Sheet</h4>
-<p><b>Employee Mobile Bill | Hotel Lodging Bill | Activity (Presentation) Bill | Business Asso Bill  | Other/Miss</b></p>
-<ol>
-    <li>Expeences Type</li>
-    <li>Purpose</li>
-    <li>Date of Exp</li>
-    <li>Amount</li>
-</ol>
-		  <hr>
-        </section>        <section class="js-section">
-          <h3 class="section__title">Point of Sale</h3>
+                <h4 id="sample-introduce">Sample Introduce (HO only)</h4>
+                <ol>
+                    <li>Product Name</li>
+                    <li>Product Batch No</li>
+                    <li>Product Exp Date</li>
+                    <li>Introduce Qty</li>
+                    <li>Introduce Date</li>
+                </ol>
+                <h4 id="sample-allocation">Sample Allocation (HO only) </h4>
+                <p>Sample Assign By HO to HQ (Served by current PSR)</p>
+                <ol>
+                    <li>HQ Name</li>
+                    <li>Product Name</li>
+                    <li>Product Batch No</li>
+                    <li>Allocate Qty</li>
+                    <li>Allocation Date</li>
+                </ol>
+                <p><b>Stock release on requirements</b></p>
+                <hr>
+            </section>
+            <section class="js-section">
+                <h3 class="section__title">Doctor Input(Gift)</h3>
 
-<p>Submit by employee every month end.</p>
+                <p><b>Follow Sample Doctor data </b></p>
+                <h4 id="input-introduce">Input Introduce</h4>
+                <ol>
+                    <li>Item Name</li>
+                    <li>Item Batch No</li>
+                    <li>Item Exp Date</li>
+                    <li>Introduce Qty</li>
+                    <li>Introduce Date</li>
+                </ol>
+                <h4 id="input-allocation">Input Allocation</h4>
+                <ol>
+                    <li>Employee Name</li>
+                    <li>Employee HQ</li>
+                    <li>Item Name</li>
+                    <li>Item Batch No</li>
+                    <li>Item Exp Date</li>
+                    <li>Allocate Qty</li>
+                    <li>Allocation Date</li>
+                </ol>
+                <p><b>Stock release on requirements</b></p>
+                <hr>
+            </section>
+            <section class="js-section">
+                <h3 class="section__title">Associate Details</h3>
 
-<img id="zoomedImage" src="assets/img/sales-leger-sample.jpg" alt="ales-leger-sample" onclick="zoomImage()">
-<h4 id="product-list">Product List (HO) </h4>
-<ol>
-    <li>Product Name</li>
-    <li>Product PTS (Price to sale)</li>
-</ol>
-<h4 id="sales-register">Sales Register</h4>
-<ol>
-    <li>HQ (Auto)</li>
-    <li>Stockiest Name (Sellect)</li>
-    <li>Product Name (Sellect)</li>
-    <li>Product Sales Qty (Input)</li>
+                <p>Associate suggestion submit by employee approve by Senior/HO.</p>
+                <p>DOCTOR, STOCKIST, CHEMIST.</p>
+                <h4 id="doctor-register">Doctor Register</h4>
+                <ol>
+                    <li>Name</li>
+                    <li>DOB (Optional)</li>
+                    <li>Specialization</li>
+                    <li>Full Address with ZIP SPLIT as Emp</li>
+                    <li>Contact No</li>
+                    <li>HQ</li>
+                </ol>
+                <p></p>
+                <h4 id="associate-register">Business Associate Register</h4>
+                <ol>
+                    <li>Business Name</li>
+                    <li>Type (Stockist/Chemist)</li>
+                    <li>Owner Name</li>
+                    <li>Full Address with ZIP</li>
+                    <li>Contact No</li>
+                    <li>HQ</li>
+                </ol>
+                <hr>
+            </section>
+            <section class="js-section">
+                <h3 class="section__title">Associate Activity</h3>
 
-    <li>Product PTS (Auto)</li>
-    <li>Total Sales Value (Auto))</li>
-</ol>
-		  <hr>
-        </section>
-	        <section class="js-section">
-          <h3 class="section__title">Company Holiday</h3>
 
-<p>Holiday &amp; leave details for the employee.
-    15 Holidays List Of The Year XXXX (April To March) </p>
-<h4 id="company-holiday-per-year">Company Holiday Per Year</h4>
-<ol>
-    <li>Description</li>
-    <li>Date of Holiday</li>
-</ol>
-<h4 id="yearly-allocated-leave">Yearly Allocated Leave</h4>
-<ol>
-    <li>Description</li>
-    <li>Alloted Leave</li>
-</ol>
-<p><b>Unused Sick Leave will be carry forward.</b></p>
-<h4 id="employee-leave-register">Employee Leave Register</h4>
-<p>Leave to be Approve by HO</p>
-<ol>
-    <li>Employee Name</li>
-    <li>Leave Type</li>
-    <li>Leave From Date</li>
-    <li>Days Asked</li>
-    <li>Days Approved</li>
-    <li>Approved By (Now defalt set to (HO)</li>
-    <li>Approved On</li>
-</ol>
-		  <hr>
-        </section><section class="js-section">
-    <h3 class="section__title">Monthly Expense</h3>
+                <p>All employees PSR/ABM/RBM/ZBM are to be submit the activity</p>
+                <p>Only PSR is allocate Sample & Gift to the Doctor.</p>
+                <p>
+                    <b>Restriction</b>: <br>
+                    1. PSR & ABM will have restriction of 48 hrs to submit the Activity. <br>
+                    2. 48 hrs to be calculate on working days only. Leave & Holiday not to be calculate<br>
+                    3. To be unlock by HO only.
+                    4. Total Area Cover
 
-    <p>To be genarate monthly based on daily visit.
-        Allowence are fixed as per nature.
-        Toe genarate from daily call register
-        <strong>To Approve by Senior/HO.</strong>
-    </p>
-    <p><b>Minimum 5 Doctor Visit Required to claim allowance. (Excluding Other Exp)</b></p>
-    <h4 id="allowence-master">Allowence Master</h4>
-    <ol>
-        <li>type</li>
-        <li>amount</li>
-        <li>Restriction</li>
-    </ol>
+                </p>
+                <p>RBM & ZBM will not fall on restriction.</p>
+                <p>All Senior are eligible to access/view the activity submitted by his sub-ordinates.</p>
+                <h4 id="doctor-visit-register">Doctor Visit Register</h4>
+                <ol>
+                    <li>Date of Visit</li>
+                    <li>Working Area (From List)</li>
+                    <li>Doctor Name</li>
+                    <li>Sample-A Name</li>
+                    <li>Sample-A Qty</li>
+                    <li>Sample-B Name</li>
+                    <li>Sample-B Qty</li>
+                    <li>Input Name</li>
+                    <li>Input Qty</li>
 
-    <table id="customers">
+                    <li>Associate Member</li>
+                </ol>
+                <h4 id="associate-visit-register">Associate Visit Register</h4>
+                <ol>
+                    <li>Associate Name</li>
+                    <li>Associate Type</li>
+                    <li>Date of Visit</li>
+                    <li>Associate Member</li>
+                </ol>
 
-        <tr>
-            <th>Cactegory</th>
-            <th>Head</th>
-            <th>Decription</th>
-            <th>PSR</th>
-            <th>ABM</th>
-            <th>RBM</th>
-            <th>ZBM</th>
-        </tr>
-        <tr>
-            <td>DA</td>
-            <td>HQ Allowence</td>
-            <td>When travle less than 20 km</td>
-            <td>XXX</td>
-            <td>XXX</td>
-            <td>XXX</td>
-            <td>XXX</td>
-        </tr>
+                <h4 id="associate-visit-register">Expense Ledger (Monthly Expenses Sheet)</h4>
+                <p><b>Employee Mobile Bill | Hotel Lodging Bill | Activity (Presentation) Bill | Business Associate Bill
+                        |
+                        Other/Miss</b></p>
+                <ol>
+                    <li>Expenses Type</li>
+                    <li>Purpose</li>
+                    <li>Date of Exp</li>
+                    <li>Amount</li>
+                </ol>
+                <hr>
+            </section>
+            <section class="js-section">
+                <h3 class="section__title">Point of Sale</h3>
 
-        <tr>
-            <td>DA</td>
-            <td>Extension</td>
-            <td>When travle more than 20 km</td>
-            <td>XXX</td>
-            <td>XXX</td>
-            <td>XXX</td>
-            <td>XXX</td>
-        </tr>
-        <tr>
-            <td>DA</td>
-            <td>Out Station *</td>
-            <td>When travle more than 200 km</td>
-            <td>XXX</td>
-            <td>XXX</td>
-            <td>XXX</td>
-            <td>XXX</td>
-        </tr>
-         <tr>
-            <td>DA</td>
-            <td>Hills Station</td>
-            <td>As per category</td>
-            <td>XXX</td>
-            <td>XXX</td>
-            <td>XXX</td>
-            <td>XXX</td>
-        </tr>   
-        <tr>
-            <td>DA</td>
-            <td>Meeting/Training</td>
-            <td>Fixed value</td>
-            <td>XXX</td>
-            <td>XXX</td>
-            <td>XXX</td>
-            <td>XXX</td>
-        </tr> 
+                <p>Submit by employee every month end.</p>
 
-        <tr>
-            <td>TA</td>
-            <td>Any travel</td>
-            <td>Fixed per km value both way</td>
-            <td>XXX</td>
-            <td>XXX</td>
-            <td>XXX</td>
-            <td>XXX</td>
-        </tr>
-    </table>
-    <p>
-        <b>Daily Allowence (DA):</b> Based on Distance 200 (Less than 20 km) | 190 (20 km +)<br>
-        <b>Traveling Allowence (TA):</b> Only applicable on 20 km + travel @ 2.5 (Master) <br>
+                <img id="zoomedImage" src="assets/img/sales-leger-sample.jpg" alt="ales-leger-sample"
+                    onclick="zoomImage()">
+                <h4 id="product-list">Product List (HO) </h4>
+                <ol>
+                    <li>Product Name</li>
+                    <li>Product PTS (Price to sale)</li>
+                </ol>
+                <h4 id="sales-register">Sales Register</h4>
+                <ol>
+                    <li>HQ (Auto)</li>
+                    <li>Stockiest Name (Select)</li>
+                    <li>Product Name (Select)</li>
+                    <li>Product Sales Qty (Input)</li>
 
-    </p>
-    <h4 id="other-expense-register">Other Expense Register</h4>
-    <p>To be disscuss</p>
-    <ol>
-        <li>description</li>
-        <li>amount</li>
-    </ol>
-    <hr>
-</section>        <section class="js-section">
-          <h2 class="section__title">Report Details</h2>
-			
-<ol>
-<li>Employee Details (1)</li>
-<li>Leave Samary (2) </li>
-<li>Sample (2) </li> 
-<li>Inputs (2) </li>
-<li>DCR (1) </li>
-<li>Sales Report (2) </li>
-<li>Doctor (?) </li>
-<li>Expenses (1) </li>
+                    <li>Product PTS (Auto)</li>
+                    <li>Total Sales Value (Auto)</li>
+                </ol>
+                <hr>
+            </section>
+            <section class="js-section">
+                <h3 class="section__title">Company Holiday</h3>
 
-</ol>
-<p>
-	
-	<b>Total Report: </b> 11+ <br>
-	   Structure refference sent via Excel <br><br>
-	<b>Total Input:  </b> 17 <br>
-	   Structure refference sent via Excel <br>
-	
+                <p>Holiday and leave details for the employee.
+                    15 Holidays List Of The Year XXXX (April To March) </p>
+                <h4 id="company-holiday-per-year">Company Holiday Per Year</h4>
+                <ol>
+                    <li>Description</li>
+                    <li>Date of Holiday</li>
+                </ol>
+                <h4 id="yearly-allocated-leave">Yearly Allocated Leave</h4>
+                <ol>
+                    <li>Description</li>
+                    <li>Allotted Leave</li>
+                </ol>
+                <p><b>Unused Sick Leave will be carry forward.</b></p>
+                <h4 id="employee-leave-register">Employee Leave Register</h4>
+                <p>Leave to be Approve by HO</p>
+                <ol>
+                    <li>Employee Name</li>
+                    <li>Leave Type</li>
+                    <li>Leave From Date</li>
+                    <li>Days Asked</li>
+                    <li>Days Approved</li>
+                    <li>Approved By (Now default set to HO)</li>
+                    <li>Approved On</li>
+                </ol>
+                <hr>
+            </section>
+            <section class="js-section">
+                <h3 class="section__title">Monthly Expense</h3>
 
-</p>
-		  <hr>
-        </section>       
-      </article>
+                <p>To be generate monthly based on daily visit.
+                    Allowance are fixed as per nature.
+                    Toe generate from daily call register
+                    <strong>To Approve by Senior/HO.</strong>
+                </p>
+                <p><b>Minimum 5 Doctor Visit Required to claim allowance. (Excluding Other Exp)</b></p>
+                <h4 id="allowence-master">Allowance Master</h4>
+                <ol>
+                    <li>type</li>
+                    <li>amount</li>
+                    <li>Restriction</li>
+                </ol>
+
+                <table id="customers">
+
+                    <tr>
+                        <th>Category</th>
+                        <th>Head</th>
+                        <th>Descriptions</th>
+                        <th>PSR</th>
+                        <th>ABM</th>
+                        <th>RBM</th>
+                        <th>ZBM</th>
+                    </tr>
+                    <tr>
+                        <td>DA</td>
+                        <td>HQ Allowance</td>
+                        <td>Travels less than 20 km</td>
+                        <td>XXX</td>
+                        <td>XXX</td>
+                        <td>XXX</td>
+                        <td>XXX</td>
+                    </tr>
+
+                    <tr>
+                        <td>DA</td>
+                        <td>Extension</td>
+                        <td>Travels more than 20 km</td>
+                        <td>XXX</td>
+                        <td>XXX</td>
+                        <td>XXX</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td>DA</td>
+                        <td>Out Station *</td>
+                        <td>Travels more than 200 km</td>
+                        <td>XXX</td>
+                        <td>XXX</td>
+                        <td>XXX</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td>DA</td>
+                        <td>Hills Station</td>
+                        <td>As per category</td>
+                        <td>XXX</td>
+                        <td>XXX</td>
+                        <td>XXX</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td>DA</td>
+                        <td>Meeting/Training</td>
+                        <td>Fixed value</td>
+                        <td>XXX</td>
+                        <td>XXX</td>
+                        <td>XXX</td>
+                        <td>XXX</td>
+                    </tr>
+
+                    <tr>
+                        <td>TA</td>
+                        <td>Any travel</td>
+                        <td>Fixed per km value both way</td>
+                        <td>XXX</td>
+                        <td>XXX</td>
+                        <td>XXX</td>
+                        <td>XXX</td>
+                    </tr>
+                </table>
+                <p>
+                    <b>Daily Allowance (DA):</b> Based on Distance 200 (Less than 20 km) | 190 (20 km +)<br>
+                    <b>Traveling Allowance (TA):</b> Only applicable on 20 km + travel @ 2.5 (Master) <br>
+
+                </p>
+                <h4 id="other-expense-register">Other Expense Register</h4>
+                <p>To be discuss</p>
+                <ol>
+                    <li>description</li>
+                    <li>amount</li>
+                </ol>
+                <hr>
+            </section>
+            <section class="js-section">
+                <h2 class="section__title">Report Details</h2>
+
+                <ol>
+                    <li>Employee Details (1)</li>
+                    <li>Leave Summary (2) </li>
+                    <li>Sample (2) </li>
+                    <li>Inputs (2) </li>
+                    <li>DCR (1) </li>
+                    <li>Sales Report (2) </li>
+                    <li>Doctor (?) </li>
+                    <li>Expenses (1) </li>
+
+                </ol>
+                <p>
+
+                    <b>Total Report: </b> 11+ <br>
+                    Structure reference sent via Excel <br><br>
+                    <b>Total Input: </b> 17 <br>
+                    Structure reference sent via Excel <br>
+
+
+                </p>
+                <hr>
+            </section>
+        </article>
 
     </div>
-	<!---./Wraper End--->
-	<footer class="footer">
-		Lorfanpharma Web Application Layout
-		<a href="https://citytask.com/" target="_blank" class="link link--light">Citytask.com</a>.
-	</footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <!---./Wrapper End--->
+    <footer class="footer">
+        Lorfanpharma Web Application Layout
+        <a href="https://citytask.com/" target="_blank" class="link link--light">Citytask.com</a>.
+    </footer>
     <script src="assets/js/scribbler.js"></script>
 
-  <script>
-	/*
-	 * Auto Refress
-	 */
-	 
-    // Set the time interval for refreshing in milliseconds (e.g., 5000 for 5 seconds)
-		const refreshInterval = 5000000;
+    <script>
+        function removeClass(elementId, className) {
+            var element = document.getElementById(elementId);
+            if (element) {
+                element.classList.remove(className);
+            }
+        }
+        // Function to print the current page
+        function printCurrentPage() {
+            removeClass('page-title', 'd-none');
+            window.print();
+        }
 
-    // Function to reload the page
-		function autoRefresh() {
-		  location.reload();
-		}
+        /*
+         * Zooming Image
+         */
+        let isZoomed = false;
+        function zoomImage() {
+            const image = document.getElementById('zoomedImage');
 
-    // Set a timer to call the autoRefresh function after the specified interval
-		setTimeout(autoRefresh, refreshInterval);
-	
-	/*
-	 * Zooming Image
-	 */
-    let isZoomed = false;
-    function zoomImage() {
-      const image = document.getElementById('zoomedImage');
+            if (isZoomed) {
+                // If already zoomed, reset to original size
+                image.style.transform = 'scale(1)';
+            } else {
+                // If not zoomed, zoom in
+                image.style.transform = 'scale(2)';
+            }
 
-      if (isZoomed) {
-        // If already zoomed, reset to original size
-        image.style.transform = 'scale(1)';
-      } else {
-        // If not zoomed, zoom in
-        image.style.transform = 'scale(2)';
-      }
+            // Toggle the zoom state
+            isZoomed = !isZoomed;
+        }	
+    </script>
+</body>
 
-      // Toggle the zoom state
-      isZoomed = !isZoomed;
-    }	
-  </script>	
-  </body>
 </html>

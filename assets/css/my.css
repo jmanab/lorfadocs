@@ -1,3 +1,4 @@
+.d-none {display: none;}
 .section__title{color: var(--accent-color);}
 p {
 	border-left: 2px solid var(--accent-color-light);
@@ -31,7 +32,11 @@ ol li::before {
   font-weight: bold;
 }
 
-
+.status {
+  background: #e4ffe9; 
+  padding: 20px; 
+  margin: 20px 0; 
+}
 @media (min-width: 600px) {
   ol {
     columns: 2; /* Use two columns for screens wider than 600px */
@@ -52,3 +57,37 @@ ol li::before {
 	margin-top: 10px;
 	width: 250px;
   }
+
+  /*---Print Element---*/
+  @media print {
+    /* All your print styles go here */
+    aside,
+    nav {
+        display: none !important;
+    }
+
+    .wrapper {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    p {
+        border-left: 5px solid var(--accent-color-light);
+        text-align: justify;
+        padding-left: 20px;
+        margin: 20px 0;
+    }
+
+    hr {
+        margin-top: 20px;
+    }
+
+    .js-section {
+        margin-bottom: 20px;
+    }
+
+    body,
+    .wrapper {
+        background: #fff;
+    }
+}
